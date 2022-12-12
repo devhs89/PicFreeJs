@@ -1,0 +1,5 @@
+# Ignored Files
+**/.idea
+**/.vscode
+
+**/node_modules
