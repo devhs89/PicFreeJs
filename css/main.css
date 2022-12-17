@@ -983,6 +983,10 @@ h6 {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .brand-name {
   font-family: "NerkoOne", sans-serif;
   color: var(--grey-light-shade);
