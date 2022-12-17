@@ -14,41 +14,7 @@
  */
 :root {
   /*Colors*/
-  --teal-100: rgb(178, 223, 219);
-  --teal-200: rgb(128, 203, 196);
-  --teal-300: rgb(77, 182, 172);
-  --teal-400: rgb(38, 166, 154);
-  --teal-500: rgb(0, 150, 136);
-  --teal-600: rgb(0, 137, 123);
-  --teal-700: rgb(0, 121, 107);
-  --teal-800: rgb(0, 105, 92);
-  --teal-900: rgb(0, 77, 64);
-  --blue-grey-100: rgb(207, 216, 220);
-  --blue-grey-200: rgb(176, 190, 197);
-  --blue-grey-300: rgb(144, 164, 174);
-  --blue-grey-400: rgb(120, 144, 156);
-  --blue-grey-500: rgb(96, 125, 139);
-  --blue-grey-600: rgb(84, 110, 122);
-  --blue-grey-700: rgb(69, 90, 100);
-  --blue-grey-800: rgb(55, 71, 79);
-  --blue-grey-900: rgb(38, 50, 56);
-  --grey-100: rgb(245, 245, 245);
-  --grey-200: rgb(238, 238, 238);
-  --grey-300: rgb(224, 224, 224);
-  --grey-400: rgb(189, 189, 189);
-  --grey-500: rgb(158, 158, 158);
-  --grey-600: rgb(117, 117, 117);
-  --grey-700: rgb(97, 97, 97);
-  --grey-800: rgb(66, 66, 66);
-  --grey-900: rgb(33, 33, 33);
-  --primary-shade: var(--teal-500);
-  --primary-dark-shade: var(--teal-800);
-  --primary-light-shade: var(--teal-200);
-  --accent-shade: var(--blue-grey-500);
-  --accent-dark-shade: var(--blue-grey-800);
-  --accent-light-shade: var(--blue-grey-300);
-  --grey-light-shade: var(--grey-100);
-  --grey-dark-shade: var(--grey-900);
+  --bs-font-sans-serif: 'Montserrat', sans-serif;
   /*Icons*/
   --navbar-toggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28254, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --external-link: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDIwIDIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik05LjI2IDEzYTIgMiAwIDAgMSAuMDEtMi4wMUEzIDMgMCAwIDAgOSA1SDVhMyAzIDAgMCAwIDAgNmguMDhhNi4wNiA2LjA2IDAgMCAwIDAgMkg1QTUgNSAwIDAgMSA1IDNoNGE1IDUgMCAwIDEgLjI2IDEwem0xLjQ4LTZhMiAyIDAgMCAxLS4wMSAyLjAxQTMgMyAwIDAgMCAxMSAxNWg0YTMgMyAwIDAgMCAwLTZoLS4wOGE2LjA2IDYuMDYgMCAwIDAgMC0ySDE1YTUgNSAwIDAgMSAwIDEwaC00YTUgNSAwIDAgMS0uMjYtMTB6Ii8+PC9zdmc+");
@@ -87,46 +53,36 @@
   background-image: var(--telephone-icon);
 }
 
-html,
-body {
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 1rem !important;
-  color: var(--grey-dark-shade) !important;
-  margin: 0 !important;
-  padding: 0 !important;
+.nav-link-special {
+  padding: 0.0625rem 0.5rem;
 }
 
 .pageTittleHeading {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--bs-font-sans-serif) !important;
   font-weight: 500;
 }
 
-.page-footer {
-  width: 100%;
-  padding: 2rem 0;
-  color: var(--grey-light-shade);
-  border-radius: 0.3rem 0.3rem 0 0;
-}
-
-.footer-links-list {
+.footer-navbar-nav {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 0.3rem;
-  list-style: none;
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+.footer-navbar-nav a {
+  text-decoration: none;
 }
 
 /*!
  * Tablet Styles
  */
 @media (min-width: 768px) {
-  .footer-links-list {
+  .footer-navbar-nav {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
-
 
 /*!
  * Desktop Styles
