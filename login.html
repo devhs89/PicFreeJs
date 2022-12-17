@@ -1,0 +1,112 @@
+<!--
+CREATED BY: Vinay Kumar Reddy Janumpally
+VERSION: 0.2
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Account - PicFree</title>
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <!--Bootstrap Stylesheet-->
+  <link href="./css/libraries/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!--Project Stylesheets-->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/account.css">
+  <!--jQuery Script-->
+  <script defer src="./js/libraries/jquery/jquery.min.js"></script>
+  <!--Bootstrap Bundle Script-->
+  <script defer src="./js/libraries/bootstrap/bootstrap.bundle.min.js"></script>
+  <!--jQuery UI Script-->
+  <script defer src="./js/libraries/jquery/ui/jquery-ui.min.js"></script>
+  <!--Project Scripts-->
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/account.js"></script>
+</head>
+<body>
+<!--Navigation Bar-->
+<nav class="navBar bg-primary shadow">
+  <div class="container-fluid">
+    <a href="index.html" class="brand-name">
+      <span class="text-capitalize">pic</span><span class="text-uppercase">free</span></a>
+    <div class="nav-links-list-container">
+      <ul class="nav-links-list m-0 p-0">
+        <li class="nav-list-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="explore.html" class="nav-link">Explore</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="faqs.html" class="nav-link">FAQs</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="account.html" class="nav-link">Account</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Main Content-->
+<main>
+  <div class="container my-6" id="login">
+    <h1 class="pageTittleHeading mb-4">Login</h1>
+    <small>If you are not registered, <a href="account.html" class="link-primary">click here</a> to create an account.</small>
+    <hr class="mb-4">
+    <div class="mb-6 contactFormContainer">
+      <form action="index.html" method="post" class="row">
+        <div class="mb-3 col col-lg">
+          <label for="emailAddr" class="form-label">Email *</label>
+          <input type="email" name="emailAddr" id="emailAddr" class="form-control" placeholder="e.g. name@email.com"
+                 required>
+        </div>
+        <div class="mb-3 col col-lg">
+          <label for="passWord" class="form-label">Password *</label>
+          <input type="password" name="passWord" id="passWord" class="form-control"
+                 pattern="[A-Za-z0-9\$\-\_\*\@]{8,}" placeholder="A-Z a-z 0-9 $-_*@ and at least 8 chars long" required>
+        </div>
+        <div class="w-100">
+          <button type="submit" class="btn btn-primary" id="login">Log In</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+<!--Footer Content-->
+<footer class="page-footer bg-dark">
+  <div class="container">
+    <div class="row gap-1 mb-5">
+      <a href="index.html" class="brand-name col">
+        <span class="text-capitalize">pic</span><span class="text-uppercase">free</span></a>
+      <small class="col">One of the biggest collection of images!</small>
+    </div>
+    <div class="text-center mb-5">
+      <ul class="footer-links-list m-0 p-0">
+        <li><a href="index.html" class="link-light">Home</a></li>
+        <li><a href="explore.html" class="link-light">Explore</a></li>
+        <li><a href="faqs.html" class="link-light">FAQs</a></li>
+        <li><a href="account.html" class="link-light">Account</a></li>
+        <li><a href="contact.html" class="link-light">Contact</a></li>
+      </ul>
+    </div>
+    <div class="text-center text-faded">
+      <small>&copy; 2022 Vinay Kumar Reddy Janumpally</small>
+    </div>
+    <div class="text-center text-faded">
+      <small>Inspired by
+        <a href="https://pixabay.com/" target="_blank" class="link-credits" referrerpolicy="no-referrer">Pixabay</a> &
+        <a href="https://getbootstrap.com/" target="_blank" class="link-credits"
+           referrerpolicy="no-referrer">Bootstrap</a>
+      </small>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
