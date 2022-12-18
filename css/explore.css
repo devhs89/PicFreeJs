@@ -1,0 +1,32 @@
+.my-6{
+  margin-top: 100px;
+}
+
+.col > img{
+  flex: 33%;
+  max-width: 33%;
+  display: none;
+}
+
+.mb-6{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.col-2{
+  flex: 50%;
+  max-width: 50%;
+  text-align: center;
+}
+
+.pageTittleHeading{
+  display: none;
+}
+
+.images{
+  display: none;
+}
+
+.images2, .images3, .images4, .images5{
+  display: none;
+}
