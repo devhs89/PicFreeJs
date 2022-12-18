@@ -45,6 +45,14 @@
   margin-top: 0.12rem;
 }
 
+
+/*!
+Default Classes
+*/
+html, body {
+  color: var(--bs-dark) !important;
+}
+
 .location-icon {
   background-image: var(--location-icon);
 }
@@ -54,7 +62,7 @@
 }
 
 .nav-link-special {
-  padding: 0.0625rem 0.5rem;
+  padding: 0.5rem 0 0 0;
 }
 
 .pageTittleHeading {
@@ -88,4 +96,7 @@
  * Desktop Styles
  */
 @media (min-width: 992px) {
+  .nav-link-special {
+    padding: 0.0625rem 0.5rem;
+  }
 }
