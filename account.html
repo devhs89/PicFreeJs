@@ -8,7 +8,7 @@ VERSION: 0.2
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Account - PicFree</title>
+  <title>Registration - PicFree</title>
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,41 +69,40 @@ VERSION: 0.2
   </div>
 </nav>
 <!--Main Content-->
-<main>
-  <div class="container my-6" id="registartion">
-    <h1 class="pageTittleHeading mb-4">Registration</h1>
-    <small>If you already registered, <a href="login.html" class="link-primary">click here</a> to login.</small>
+<div class="container my-5" id="registration">
+  <main>
+    <h1 class="pageTittleHeading mb-2">Registration</h1>
+    <small>If you already registered, <a href="login.html" class="link-success">click here</a> to login.</small>
     <hr class="mb-4">
-    <!--Add Content Here-->
-    <div class="mb-6 contactFormContainer">
+    <div class="contactFormContainer">
       <form action="contact.html" method="post" class="row">
-        <div class="mb-3 col col-lg">
+        <div class="mb-3 col-12 col-lg-6">
           <label for="clientName" class="form-label">Full Name *</label>
           <input type="text" name="clientName" id="clientName" class="form-control" pattern="[A-Za-z0-9]+"
                  placeholder="e.g. John Doe" required>
         </div>
-        <div class="mb-3 col col-lg">
+        <div class="mb-3 col-12 col-lg-6">
           <label for="clientEmail" class="form-label">Email *</label>
           <input type="email" name="clientEmail" id="clientEmail" class="form-control" placeholder="e.g. name@email.com"
                  required>
         </div>
-        <div class="mb-3 col col-lg">
+        <div class="mb-3 col-12 col-lg-6">
           <label for="clientPassword" class="form-label">Password *</label>
           <input type="password" name="clientSubject" id="clientPassword" class="form-control"
                  placeholder="Must be at least 8 chars" required>
         </div>
-        <div class="mb-3 col col-lg">
+        <div class="mb-3 col-12 col-lg-6">
           <label for="clientRepeatPass" class="form-label">Confirm Password *</label>
           <input type="text" name="clientRepeatPass" id="clientRepeatPass" class="form-control"
                  placeholder="Must match password" required>
         </div>
-        <div class="w-100">
-          <button type="submit" class="btn btn-primary" id="submit">Register</button>
+        <div class="col-12">
+          <button type="submit" class="btn btn-success" id="submit">Register</button>
         </div>
       </form>
     </div>
-  </div>
-</main>
+  </main>
+</div>
 <!--Footer Content-->
 <footer class="bg-dark text-light py-5">
   <div class="container-fluid">
