@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*!
+ * CREATED BY:
+ *     - Aruna Rani
+ *     - Harpreet Singh
+ *     - Pratharan Sai Rupak Reddy Gondi
+ *     - Vinay Kumar Reddy Janumpally
+ * INSPIRED BY: Bootstrap Library
+ * VERSION: 0.1
+ */
+
+/*!
+Default Classes
+*/
+.home-header-bg {
+  background-image: url("../images/home/search-bg.jpg") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 8rem 0;
+}
+
+/*!
+ * Tablet Styles
+ */
+@media (min-width: 768px) {
+  .home-header-content {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+/*!
+ * Desktop Styles
+ */
+@media (min-width: 992px) {
+  .home-header-content {
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
+  }
+}

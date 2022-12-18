@@ -12,24 +12,32 @@ VERSION: 0.1
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+  <!-- Fotorama from CDNJS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <!--FontAwesome Stylesheet-->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
   <!--Bootstrap Stylesheet-->
   <link href="./css/libraries/bootstrap/bootstrap.min.css" rel="stylesheet">
   <!--Project Stylesheets-->
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/account.css">
+  <link rel="stylesheet" href="./css/home.css">
   <!--jQuery Script-->
   <script defer src="./js/libraries/jquery/jquery.min.js"></script>
   <!--Bootstrap Bundle Script-->
   <script defer src="./js/libraries/bootstrap/bootstrap.bundle.min.js"></script>
   <!--jQuery UI Script-->
   <script defer src="./js/libraries/jquery/ui/jquery-ui.min.js"></script>
+  <!-- Fotorama from CDNJS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
   <!--Project Scripts-->
   <script defer src="./js/main.js"></script>
   <script defer src="./js/home.js"></script>
 </head>
 <body>
 <!--Navigation Bar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">
       <span class="text-capitalize">pic</span><span class="text-uppercase">free</span></a>
@@ -38,7 +46,7 @@ VERSION: 0.1
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a href="index.html" class="nav-link">Home</a>
         </li>
@@ -61,12 +69,69 @@ VERSION: 0.1
   </div>
 </nav>
 <!--Main Content-->
-<main>
-  <div class="container my-5">
-    <!--Add Content Here-->
-    <h1 class="pageTittleHeading mb-4">Contact Us</h1>
+<header class="home-header-bg text-light">
+  <div class="container">
+    <div class="home-header-content">
+      <h1 class="display-6">Stunning free images & royalty free stock</h1>
+      <div class="mb-3">
+        <small>Over 1 million+ high quality stock images, videos and music shared by our talented community.</small>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search all the images"
+               aria-label="Search all the images"
+               aria-describedby="header-search-btn">
+        <button class="btn btn-success" type="button" id="header-search-btn"><i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div>
+        <small>
+          <span>Popular: </span>
+          <a href="#" class="link-light">christmas</a>
+          <a href="#" class="link-light">wallpaper</a>
+          <a href="#" class="link-light">nature</a>
+          <a href="#" class="link-light">christmas background</a>
+          <a href="#" class="link-light">christmas tree</a>
+          <a href="#" class="link-light">winter</a>
+          <a href="#" class="link-light">sky</a>
+          <a href="#" class="link-light">snow</a>
+          <a href="#" class="link-light">cat</a>
+          <a href="#" class="link-light">money</a>
+          <a href="#" class="link-light">food</a>
+        </small>
+      </div>
+    </div>
   </div>
-</main>
+</header>
+<div class="container my-5">
+  <main>
+    <div class="row mb-5">
+      <div class="col"><a href="#" class="link-success text-decoration-none active"><i class="fas fa-home"></i> Home</a>
+      </div>
+      <div class="col"><a href="#" class="link-dark text-decoration-none"><i class="fas fa-image"></i> Photos</a></div>
+      <div class="col"><a href="#" class="link-dark text-decoration-none"><i class="fas fa-brush"></i> Illustrations</a>
+      </div>
+      <div class="col"><a href="#" class="link-dark text-decoration-none"><i class="fas fa-vector-square"></i>
+        Vectors</a>
+      </div>
+      <div class="col"><a href="#" class="link-dark text-decoration-none"><i class="fas fa-video"></i> Videos</a></div>
+      <div class="col"><a href="#" class="link-dark text-decoration-none"><i class="fas fa-music"></i> Music</a></div>
+    </div>
+    <div class="d-flex flex-column home-images-container">
+      <div class="mx-auto fotorama" data-nav="thumbs">
+        <img src="./images/home/grid1.webp" alt="Grid1">
+        <img src="./images/home/grid2.webp" alt="Grid2">
+        <img src="./images/home/grid3.webp" alt="Grid3">
+        <img src="./images/home/grid4.jpg" alt="Grid4">
+        <img src="./images/home/grid5.jpg" alt="Grid5">
+        <img src="./images/home/grid6.jpg" alt="Grid6">
+        <img src="./images/home/grid7.jpg" alt="Grid7">
+        <img src="./images/home/grid8.jpg" alt="Grid8">
+        <img src="./images/home/grid9.jpg" alt="Grid9">
+        <img src="./images/home/grid10.jpg" alt="Grid10">
+      </div>
+    </div>
+  </main>
+</div>
 <!--Footer Content-->
 <footer class="bg-dark text-light py-5 rounded-top">
   <div class="container-fluid">
