@@ -1,0 +1,126 @@
+<!--
+CREATED BY: Vinay Kumar Reddy Janumpally
+VERSION: 0.2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - PicFree</title>
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <!-- Fotorama from CDNJS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <!--FontAwesome Stylesheet-->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+  <!--Bootstrap Stylesheet-->
+  <link href="./css/libraries/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!--Project Stylesheets-->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/account.css">
+  <!--jQuery Script-->
+  <script defer src="./js/libraries/jquery/jquery.min.js"></script>
+  <!--Bootstrap Bundle Script-->
+  <script defer src="./js/libraries/bootstrap/bootstrap.bundle.min.js"></script>
+  <!--jQuery UI Script-->
+  <script defer src="./js/libraries/jquery/ui/jquery-ui.min.js"></script>
+  <!--Project Scripts-->
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/account.js"></script>
+</head>
+<body>
+<!--Navigation Bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <span class="text-capitalize">pic</span><span class="text-uppercase">free</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="explore.html" class="nav-link">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="faqs.html" class="nav-link">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <div class="nav-link-special">
+            <a href="login.html" class="btn btn-success">Account</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Main Content-->
+<div class="container my-5" id="login">
+  <main>
+    <h1 class="pageTittleHeading mb-2">Login</h1>
+    <small>If you are not registered, <a href="registration.html" class="link-success">click here</a> to create an
+      account.</small>
+    <hr class="mb-4">
+    <div class="contactFormContainer">
+      <form action="index.html" method="post" class="row">
+        <div class="mb-3 col-12 col-md-6">
+          <label for="emailAddr" class="form-label">Email *</label>
+          <input type="email" name="emailAddr" id="emailAddr" class="form-control" placeholder="e.g. name@email.com"
+                 required>
+        </div>
+        <div class="mb-3 col-12 col-md-6">
+          <label for="passWord" class="form-label">Password *</label>
+          <input type="password" name="passWord" id="passWord" class="form-control"
+                 pattern="[A-Za-z0-9\$\-\_\*\@]{8,}" placeholder="A-Z a-z 0-9 $-_*@ and at least 8 chars long" required>
+        </div>
+        <div class="col-12 mb-3">
+          <button type="submit" class="btn btn-success" id="login-btn">Log In</button>
+        </div>
+      </form>
+    </div>
+  </main>
+</div>
+<!--Footer Content-->
+<footer class="bg-dark text-light py-5">
+  <div class="container-fluid">
+    <div class="row gap-2 gap-md-0 mb-4">
+      <div class="col-12 col-md-auto">
+        <a href="index.html" class="btn btn-lg btn-light">
+          <span class="text-capitalize">pic</span><span class="text-uppercase">free</span></a>
+      </div>
+      <div class="col align-self-center">
+        <small>One of the biggest collection of images!</small>
+      </div>
+    </div>
+    <div class="footer-navbar-nav m-auto mb-4">
+      <a href="index.html" class="link-light">Home</a>
+      <a href="explore.html" class="link-light">Explore</a>
+      <a href="contact.html" class="link-light">Contact</a>
+      <a href="faqs.html" class="link-light">FAQs</a>
+      <a href="registration.html" class="link-light">Account</a>
+    </div>
+    <div class="text-center text-secondary">
+      <small>&copy; 2022 Vinay Kumar Reddy Janumpally</small><br>
+      <small>Inspired by
+        <a href="https://pixabay.com/" target="_blank" class="link-secondary" referrerpolicy="no-referrer">Pixabay</a> &
+        <a href="https://getbootstrap.com/" target="_blank" class="link-secondary"
+           referrerpolicy="no-referrer">Bootstrap</a>
+      </small>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
