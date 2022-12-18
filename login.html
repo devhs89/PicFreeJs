@@ -62,7 +62,7 @@ VERSION: 0.2
         </li>
         <li class="nav-item">
           <div class="nav-link-special">
-            <a href="account.html" class="btn btn-success">Account</a>
+            <a href="login.html" class="btn btn-success">Account</a>
           </div>
         </li>
       </ul>
@@ -70,33 +70,33 @@ VERSION: 0.2
   </div>
 </nav>
 <!--Main Content-->
-<main>
-  <div class="container my-5" id="login">
-    <h1 class="pageTittleHeading mb-4">Login</h1>
+<div class="container my-5" id="login">
+  <main>
+    <h1 class="pageTittleHeading mb-2">Login</h1>
     <small>If you are not registered, <a href="account.html" class="link-success">click here</a> to create an
       account.</small>
     <hr class="mb-4">
-    <div class="mb-6 contactFormContainer">
+    <div class="contactFormContainer">
       <form action="index.html" method="post" class="row">
-        <div class="mb-3 col col-lg">
+        <div class="mb-3 col-12 col-md-6">
           <label for="emailAddr" class="form-label">Email *</label>
           <input type="email" name="emailAddr" id="emailAddr" class="form-control" placeholder="e.g. name@email.com"
                  required>
         </div>
-        <div class="mb-3 col col-lg">
+        <div class="mb-3 col-12 col-md-6">
           <label for="passWord" class="form-label">Password *</label>
           <input type="password" name="passWord" id="passWord" class="form-control"
                  pattern="[A-Za-z0-9\$\-\_\*\@]{8,}" placeholder="A-Z a-z 0-9 $-_*@ and at least 8 chars long" required>
         </div>
-        <div class="w-100">
+        <div class="col-12 mb-3">
           <button type="submit" class="btn btn-success" id="login-btn">Log In</button>
         </div>
       </form>
     </div>
-  </div>
-</main>
+  </main>
+</div>
 <!--Footer Content-->
-<footer class="bg-dark text-light py-5 rounded-top">
+<footer class="bg-dark text-light py-5">
   <div class="container-fluid">
     <div class="row gap-2 gap-md-0 mb-4">
       <div class="col-12 col-md-auto">
