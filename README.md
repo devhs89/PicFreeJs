@@ -1,4 +1,4 @@
-# JavaScript Programming Level 1 (PROG8660)
+# JavaScript Programming Level 1 (PROG8660) (Archived)
 
 ## Final Group Project
 
